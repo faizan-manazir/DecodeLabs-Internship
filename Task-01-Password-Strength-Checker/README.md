@@ -370,7 +370,3 @@ Cybersecurity and Digital Forensics
 Developed for **DecodeLabs Cyber Security Industrial Training Program – Project 1**
 
 ---
-
-## 📄 License
-
-This project is licensed under the terms specified in the [LICENSE](LICENSE) file.
