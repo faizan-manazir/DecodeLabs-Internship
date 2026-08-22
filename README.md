@@ -69,9 +69,27 @@ Through this internship task, I am gaining practical experience in:
 DecodeLabs-Cyber-Security-Internship/
 │
 ├── Task-01-Password-Strength-Checker/
-│   ├── source-code/
+│   │
+│   ├── password_analyzer.py
+│   ├── guess_time_estimator.py
+│   ├── gui.py
+│   ├── cli.py
+│   │
+│   ├── data/
+│   │   └── common_passwords.txt
+│   │
+│   ├── tests/
+│   │   └── test_analyzer.py
+│   │
 │   ├── screenshots/
-│   └── README.md
+│   │   ├── weak_password.png
+│   │   ├── medium_password.png
+│   │   └── strong_password.png
+│   │
+│   ├── requirements.txt
+│   ├── README.md
+│   ├── LICENSE
+│   └── .gitignore
 │
 └── README.md
 ```
