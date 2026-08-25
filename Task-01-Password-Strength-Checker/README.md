@@ -141,6 +141,8 @@ decodelabs-password-security-analyzer/
 │   ├── weak_password.png
 │   ├── medium_password.png
 │   ├── strong_password.png
+│   ├── very_strong_password.png
+│   ├── cli.png
 │
 ├── requirements.txt
 ├── README.md
