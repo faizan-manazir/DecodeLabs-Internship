@@ -165,35 +165,13 @@ Each selected key-based algorithm receives its own key input.
 
 ---
 
-## 🛡️ Security Guide
+## 🔬 Live Transformation
 
-The Security Guide compares the techniques and highlights the difference between educational methods and modern authenticated encryption.
+The bottom-left Live Transformation panel visualizes how the user's input is processed by the selected algorithm.
 
-![Security Guide](screenshots/security-guide.png)
+For example, Caesar Cipher can display character positions, shifts, calculations, and resulting characters.
 
----
-
-## 🔑 Password Strength Meter
-
-Password-based modern encryption techniques provide strength feedback while entering a password.
-
-![Password Strength Meter](screenshots/password-strength.png)
-
----
-
-## 📊 Encryption Statistics
-
-CipherVault displays useful operation statistics such as input/output size and processing time.
-
-![Encryption Statistics](screenshots/encryption-statistics.png)
-
----
-
-## ⌘ Source Code Button
-
-A highly visible navigation button redirects directly to the project's GitHub repository.
-
-![Source Code Link](screenshots/source-code-link.png)
+![Live Transformation](screenshots/live-transformation.png)
 
 ---
 
@@ -649,7 +627,6 @@ CipherVault/
 ├── config.py
 ├── requirements.txt
 ├── README.md
-├── .env.example
 ├── .gitignore
 │
 ├── algorithms/
@@ -698,8 +675,6 @@ CipherVault/
     ├── encryption-statistics.png
     └── source-code-link.png
 ```
-
-> The `screenshots/` folder should contain the screenshots used in the README.
 
 ---
 
