@@ -125,7 +125,7 @@ The primary CipherVault workspace allows the user to select a technique, enter t
 
 After encryption, the application displays the resulting ciphertext together with operation information.
 
-![Encryption Result](screenshots/encryption_result.png)
+![Encryption Result](screenshots/encryption-result.png)
 
 ---
 
@@ -133,7 +133,7 @@ After encryption, the application displays the resulting ciphertext together wit
 
 The same workspace can decrypt supported ciphertext when the correct algorithm and key/password are supplied.
 
-![Decryption Result](screenshots/decryption_result.png)
+![Decryption Result](screenshots/decryption-result.png)
 
 ---
 
@@ -143,7 +143,7 @@ The bottom-left Live Transformation panel visualizes how the user's input is pro
 
 For example, Caesar Cipher can display character positions, shifts, calculations, and resulting characters.
 
-![Live Transformation](screenshots/live_transformation.png)
+![Live Transformation](screenshots/live=transformation.png)
 
 ---
 
@@ -151,7 +151,7 @@ For example, Caesar Cipher can display character positions, shifts, calculations
 
 The dedicated learning section explains the working, key requirements, examples, and security context of each technique.
 
-![How It Works](screenshots/how_it_works.png)
+![How It Works](screenshots/how-it-works.png)
 
 ---
 
@@ -161,7 +161,7 @@ Users can select multiple algorithms and compare their outputs side by side.
 
 Each selected key-based algorithm receives its own key input.
 
-![Cipher Comparison Lab](screenshots/comparison_lab.png)
+![Cipher Comparison Lab](screenshots/comparison-lab.png)
 
 ---
 
@@ -171,7 +171,7 @@ The bottom-left Live Transformation panel visualizes how the user's input is pro
 
 For example, Caesar Cipher can display character positions, shifts, calculations, and resulting characters.
 
-![Live Transformation](screenshots/live_transformation.png)
+![Live Transformation](screenshots/live-transformation.png)
 
 ---
 
