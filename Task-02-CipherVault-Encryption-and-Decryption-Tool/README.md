@@ -143,7 +143,7 @@ The bottom-left Live Transformation panel visualizes how the user's input is pro
 
 For example, Caesar Cipher can display character positions, shifts, calculations, and resulting characters.
 
-![Live Transformation](screenshots/live=transformation.png)
+![Live Transformation](screenshots/live-transformation.png)
 
 ---
 
