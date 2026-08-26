@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>🔐 Learn | CipherVault</title><link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='img/favicon.svg') }}"><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></head>
+<body><main class="learn-page"><a class="back" href="/">← Back to CipherVault</a><div class="eyebrow">LEARN CRYPTOGRAPHY</div><h1>Understand before you encrypt.</h1><p>Use the workspace's <b>How It Works</b> tab for an algorithm-specific explanation, process steps, key type, and example.</p>
+<div class="learn-grid">
+<article class="panel"><h2>Classical</h2><p>Caesar, Vigenère, Atbash, and Rail Fence demonstrate historical substitution and transposition concepts. They are not suitable for modern sensitive data.</p></article>
+<article class="panel"><h2>Key-Based</h2><p>XOR demonstrates reversible byte-level transformation. Security depends heavily on key construction and reuse; the repeating-key implementation is educational.</p></article>
+<article class="panel"><h2>Modern</h2><p>Fernet and AES-GCM provide authenticated encryption using established cryptographic primitives. This application derives keys from passwords and packages fresh salts/nonces with ciphertext.</p></article>
+<article class="panel"><h2>Important: Encoding vs Encryption</h2><p>Base64 is intentionally not included as a CipherVault technique because it is encoding, not encryption. It changes the representation of bytes so they can be transported as text, but anyone can decode it and it provides no secrecy.</p></article>
+</div></main></body></html>

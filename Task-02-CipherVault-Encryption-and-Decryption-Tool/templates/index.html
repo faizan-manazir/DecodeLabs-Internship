@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>🔐 CipherVault | Multi-Cipher Toolkit</title>
+  <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='img/favicon.svg') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar">
+    <button id="menu-toggle" class="icon-btn mobile-only" aria-label="Toggle navigation">☰</button>
+    <a class="brand" href="/"><span class="brand-mark">◇</span><span>CIPHER<span>VAULT</span></span></a>
+    <div class="tabs">
+      <button class="tab active" data-view="workspace">⚙ Workspace</button>
+      <button class="tab how-tab" data-view="working">📖 How It Works</button>
+      <button class="tab" data-view="compare">⚖ Compare</button>
+      <button class="tab" data-view="security">🛡 Security Guide</button>
+    </div>
+    <a class="learn-link" href="/learn">Learn ↗</a>
+        <a href="https://github.com/YOUR-USERNAME/CipherVault" target="_blank" rel="noopener noreferrer" class="source-code-link">⌘ SOURCE CODE <span class="external-arrow">↗</span></a>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-label">TECHNIQUES</div>
+    <input id="search" class="search" placeholder="Search techniques..." autocomplete="off">
+    <nav id="algo-nav"></nav>
+    <div class="privacy-note">🔒 History stores metadata only. Plaintext, ciphertext, keys and passwords are never saved in history.</div>
+  </aside>
+
+  <main class="main">
+    <section id="workspace" class="view active">
+      <div class="hero-card">
+        <div>
+          <div id="info-category" class="eyebrow">CLASSICAL</div>
+          <h1 id="info-name">CipherVault</h1>
+          <p id="info-desc">Select a technique to begin.</p>
+          <button id="open-working" class="how-it-works-btn">📖 See How This Technique Works</button>
+        </div>
+        <div class="security-card"><span>SECURITY LEVEL</span><strong id="info-security">—</strong><small>Educational labels are not guarantees of deployment security.</small></div>
+      </div>
+
+      <div class="workspace-grid">
+        <section class="panel input-panel">
+          <div class="panel-head"><label for="input-text">INPUT</label><span id="input-char-count">0 chars</span></div>
+          <textarea id="input-text" maxlength="200000" placeholder="Enter plaintext to encrypt or ciphertext to decrypt..."></textarea>
+          <div id="key-section" class="key-section">
+            <label id="key-label" for="input-key">KEY</label>
+            <div class="key-wrap"><input id="input-key" type="text" autocomplete="off"><button id="toggle-key" class="icon-btn" aria-label="Show or hide key">◉</button></div>
+            <div class="key-hint" id="key-hint"></div>
+            <div id="password-meter" class="password-meter hidden">
+              <div class="meter-track"><div id="meter-bar"></div></div>
+              <div class="meter-row"><span id="meter-label">Password strength</span><span id="meter-score">0/5</span></div>
+              <div id="meter-checks" class="meter-checks"></div>
+            </div>
+          </div>
+          <div class="actions">
+            <button id="btn-encrypt" class="primary">🔒 Encrypt</button>
+            <button id="btn-decrypt" class="secondary">🔓 Decrypt</button>
+            <button id="btn-clear" class="ghost">Clear</button>
+          </div>
+        </section>
+
+        <section class="panel output-panel">
+          <div class="panel-head"><label for="output-text">RESULT</label><span id="result-status" class="status">READY</span></div>
+          <textarea id="output-text" readonly placeholder="Your result will appear here..."></textarea>
+          <div class="result-actions">
+            <button id="btn-copy" class="ghost">Copy</button>
+            <button id="btn-swap" class="ghost">Swap → Input</button>
+            <button id="btn-download" class="ghost">Download</button>
+          </div>
+          <div id="stats-card" class="stats-card hidden">
+            <div class="stat"><span>INPUT</span><b id="stat-input">0</b><small>characters</small></div>
+            <div class="stat"><span>OUTPUT</span><b id="stat-output">0</b><small>characters</small></div>
+            <div class="stat"><span>CHANGE</span><b id="stat-change">0%</b><small>size difference</small></div>
+            <div class="stat"><span>TIME</span><b id="stat-time">0 ms</b><small>request time</small></div>
+          </div>
+        </section>
+      </div>
+
+      <div class="lower-workspace-grid">
+        <section id="live-transformation" class="live-transformation panel">
+          <div class="panel-head">
+            <label>🔬 LIVE TRANSFORMATION</label>
+            <span id="live-status" class="status">WAITING</span>
+          </div>
+          <div id="live-transformation-content" class="live-empty">
+            Run an encryption or decryption operation to see how your input is transformed.
+          </div>
+        </section>
+        <section class="history panel">
+          <div class="panel-head"><label>RECENT OPERATIONS</label><button id="btn-clear-history" class="ghost small">Clear history</button></div>
+          <div id="history-list"></div>
+        </section>
+      </div>
+    </section>
+
+    <section id="working" class="view">
+      <div class="working-card panel">
+        <div class="eyebrow">ALGORITHM GUIDE</div>
+        <h1 id="work-name">Select a technique</h1>
+        <p id="work-desc"></p>
+        <div class="working-meta"><span><b>Key:</b> <span id="work-key">—</span></span><span><b>Category:</b> <span id="work-category">—</span></span></div>
+        <h2>Step-by-step working</h2><ol id="work-steps"></ol>
+        <div class="visual-demo"><h2>Visual demonstration</h2><pre id="visual-demo"></pre></div>
+        <div class="example"><h2>Example</h2><div><span>Input</span><code id="ex-input">—</code></div><div><span>Key</span><code id="ex-key">—</code></div><div><span>Output</span><code id="ex-output">—</code></div></div>
+        <p class="disclaimer">⚠ Classical ciphers and repeating-key XOR are educational. Use established modern cryptography and proper key management for real sensitive data.</p>
+      </div>
+    </section>
+
+    <section id="compare" class="view">
+      <div class="compare-intro">
+        <div class="eyebrow">CIPHER LAB</div><h1>Compare techniques side by side.</h1>
+        <p>Run the same input through multiple techniques and compare output size, category, security context, and ciphertext.</p>
+      </div>
+      <div class="panel">
+        <textarea id="compare-input" placeholder="Enter text to compare across selected techniques..."></textarea>
+        <div id="compare-selector" class="compare-selector"></div>
+        <div id="compare-keys" class="compare-keys"></div>
+        <p class="compare-note">Enter a key only for the selected techniques that require one. Keys and passwords are used only for the current request and are never saved in history.</p>
+        <button id="btn-compare" class="primary compare-btn">⚖ Run Comparison</button>
+      </div>
+      <div id="compare-results" class="compare-results"></div>
+    </section>
+
+    <section id="security" class="view">
+      <div class="working-card panel">
+        <div class="eyebrow">SECURITY COMPARISON</div><h1>Understand the differences.</h1>
+        <p>These ratings provide educational context rather than a formal security certification.</p>
+        <div class="table-wrap"><table><thead><tr><th>Technique</th><th>Modern confidentiality</th><th>Tamper detection</th><th>Authentication</th><th>Recommended for sensitive data</th></tr></thead><tbody id="security-table"></tbody></table></div>
+        <div class="security-tips"><h2>Key takeaways</h2><ul><li>Classical ciphers are useful for learning but not modern protection.</li><li><b>Base64 is not included as a technique because it is encoding, not encryption.</b> It changes representation but does not hide information or require a secret.</li><li>Repeating-key XOR is reversible but this implementation is educational.</li><li>Fernet and AES-GCM provide authenticated encryption when used correctly.</li><li>Password strength and key management remain critical to practical security.</li></ul></div>
+      </div>
+    </section>
+  </main>
+</div>
+<div id="toast-container"></div>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body></html>
