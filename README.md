@@ -13,7 +13,6 @@ The projects are based on the **Industrial Training Kit** and cover practical cy
 | Task 1 | 🔑 Password Strength Checker | ✅ Completed |
 | Task 2 | 🛡️ Secure Coding Review | ✅ Completed |
 | Task 3 | 🔍 System Vulnerability Checklist Audit | ✅ Completed |
-| Task 4 | 🚨 Network Intrusion Detection System (NIDS) | ✅ Completed |
 
 ---
 
@@ -45,8 +44,6 @@ A Python-based cybersecurity tool designed to analyze and evaluate password secu
 # 🛡️ Task 2 — Secure Coding Review
 
 A practical secure-coding assessment focused on identifying and addressing common web application security weaknesses.
-
-The project demonstrates a security review workflow, vulnerability identification, secure implementation practices, and verification of security improvements.
 
 ### Focus Areas
 
@@ -87,23 +84,6 @@ The final vulnerability report documents the findings, recommended remediation a
 
 ---
 
-# 🚨 Task 4 — Network Intrusion Detection System (NIDS)
-
-A practical Network Intrusion Detection System project focused on detecting suspicious network activity through rule-based traffic analysis.
-
-### Key Areas
-
-- Network traffic monitoring
-- Intrusion detection
-- Detection rules
-- Suspicious activity identification
-- Alert generation
-- Security event analysis
-
-The project demonstrates practical blue-team techniques for monitoring and identifying potentially malicious network behavior.
-
----
-
 ## 🛠️ Skills Practiced
 
 Through these internship projects, I have developed practical experience in:
@@ -112,8 +92,6 @@ Through these internship projects, I have developed practical experience in:
 - Blue-Team Security
 - Vulnerability Assessment
 - Secure Coding
-- Network Security
-- Intrusion Detection
 - Windows Security Assessment
 - PowerShell
 - Python
@@ -138,8 +116,6 @@ DecodeLabs-Internship/
 ├── Task-03-System-Vulnerability-Checklist/
 │   ├── README.md
 │   └── System_Vulnerability_Report.pdf
-│
-├── Task-04-NIDS/
 │
 └── README.md
 ```
