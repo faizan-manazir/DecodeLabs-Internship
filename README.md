@@ -1,17 +1,19 @@
 # 🔐 DecodeLabs Cyber Security Internship
 
-This repository documents my practical work and projects completed during the **ongoing DecodeLabs Cyber Security Internship**.
+This repository documents my practical work and projects completed during the **DecodeLabs Cyber Security Internship**.
 
-The repository will be continuously updated as new tasks from the **Industrial Training Kit** are completed.
+The projects are based on the **Industrial Training Kit** and cover practical cybersecurity concepts through hands-on implementation, security assessment, and defensive analysis.
 
 ---
 
 ## 📌 Internship Progress
 
-| Task           | Project                      | Status      |
-| -------------- | ---------------------------- | ----------- |
-| Task 1         | 🔑 Password Strength Checker | ✅ Completed |
-| Upcoming Tasks | To be updated                | ⏳ Pending   |
+| Task | Project | Status |
+|---|---|---|
+| Task 1 | 🔑 Password Strength Checker | ✅ Completed |
+| Task 2 | 🛡️ Secure Coding Review | ✅ Completed |
+| Task 3 | 🔍 System Vulnerability Checklist Audit | ✅ Completed |
+| Task 4 | 🚨 Network Intrusion Detection System (NIDS) | ✅ Completed |
 
 ---
 
@@ -19,92 +21,136 @@ The repository will be continuously updated as new tasks from the **Industrial T
 
 A Python-based cybersecurity tool designed to analyze and evaluate password security.
 
-The application examines a password against multiple security criteria and provides feedback to help users create stronger passwords.
+### Key Features
 
-## Features
+- Password strength analysis
+- Password length evaluation
+- Uppercase, lowercase, number and special-character detection
+- Password entropy estimation
+- Common-password detection
+- Pattern analysis
+- Brute-force resistance estimation
+- Security recommendations
+- CLI and GUI interfaces
 
-* Password strength analysis
-* Password length evaluation
-* Uppercase letter detection
-* Lowercase letter detection
-* Number detection
-* Special character detection
-* Password entropy estimation
-* Common password detection
-* Pattern analysis
-* Brute-force resistance estimation
-* Security recommendations
+### Technologies
 
-## Technologies Used
+- Python
+- Tkinter
+- Regular Expressions
+- Password Entropy Analysis
 
-* Python
-* Tkinter
-* Regular Expressions
-* Password Entropy Analysis
+---
 
-## Project Objectives
+# 🛡️ Task 2 — Secure Coding Review
 
-The objective of this task was to understand the importance of strong passwords and develop a practical tool capable of identifying common password weaknesses.
+A practical secure-coding assessment focused on identifying and addressing common web application security weaknesses.
+
+The project demonstrates a security review workflow, vulnerability identification, secure implementation practices, and verification of security improvements.
+
+### Focus Areas
+
+- Web application security
+- Input validation
+- Cross-Site Scripting (XSS)
+- Secure coding practices
+- Vulnerability analysis
+- Security verification
+
+---
+
+# 🔍 Task 3 — System Vulnerability Checklist Audit
+
+A practical **host security audit** performed on a Windows endpoint using PowerShell and built-in Windows security utilities.
+
+The assessment covered four major areas:
+
+1. **Identity & Authentication**
+2. **Software & Patch Management**
+3. **Human & Physical Security**
+4. **Network & Endpoint Hygiene**
+
+### Assessment Highlights
+
+- 10 security findings documented
+- 4 High-severity findings
+- 6 Medium-severity findings
+- Local account and password-policy assessment
+- Software and OS lifecycle review
+- Microsoft Defender verification
+- UAC verification
+- Windows Firewall verification
+- AutoPlay and workstation-lock assessment
+- BitLocker status assessment
+
+The final vulnerability report documents the findings, recommended remediation actions, and verification requirements.
+
+---
+
+# 🚨 Task 4 — Network Intrusion Detection System (NIDS)
+
+A practical Network Intrusion Detection System project focused on detecting suspicious network activity through rule-based traffic analysis.
+
+### Key Areas
+
+- Network traffic monitoring
+- Intrusion detection
+- Detection rules
+- Suspicious activity identification
+- Alert generation
+- Security event analysis
+
+The project demonstrates practical blue-team techniques for monitoring and identifying potentially malicious network behavior.
 
 ---
 
 ## 🛠️ Skills Practiced
 
-Through this internship task, I am gaining practical experience in:
+Through these internship projects, I have developed practical experience in:
 
-* Cybersecurity Fundamentals
-* Password Security
-* Authentication Security
-* Python Programming
-* Security Tool Development
-* Input Validation
-* Security Analysis
-* GUI Development
+- Cybersecurity Fundamentals
+- Blue-Team Security
+- Vulnerability Assessment
+- Secure Coding
+- Network Security
+- Intrusion Detection
+- Windows Security Assessment
+- PowerShell
+- Python
+- Authentication & Access Control
+- Endpoint Security
+- Security Hardening
+- Security Analysis
+- Risk Identification & Prioritization
+- Technical Documentation
 
 ---
 
 ## 📂 Repository Structure
 
 ```text
-DecodeLabs-Cyber-Security-Internship/
+DecodeLabs-Internship/
 │
 ├── Task-01-Password-Strength-Checker/
-│   │
-│   ├── password_analyzer.py
-│   ├── guess_time_estimator.py
-│   ├── gui.py
-│   ├── cli.py
-│   │
-│   ├── data/
-│   │   └── common_passwords.txt
-│   │
-│   ├── tests/
-│   │   └── test_analyzer.py
-│   │
-│   ├── screenshots/
-│   │   ├── weak_password.png
-│   │   ├── medium_password.png
-│   │   └── strong_password.png
-│   │
-│   ├── requirements.txt
+│
+├── Task-02-Secure-Coding-Review/
+│
+├── Task-03-System-Vulnerability-Checklist/
 │   ├── README.md
-│   ├── LICENSE
-│   └── .gitignore
+│   └── System_Vulnerability_Report.pdf
+│
+├── Task-04-NIDS/
 │
 └── README.md
 ```
 
 ---
 
-## 🚀 Upcoming Work
-
-This repository is part of an **ongoing internship**. Additional tasks and projects from the DecodeLabs Industrial Training Kit will be added here as they are completed.
-
----
-
 ## ⚠️ Disclaimer
 
-The projects in this repository are developed for educational and authorized cybersecurity learning purposes.
+All projects in this repository were developed for **educational and authorized cybersecurity training purposes** as part of the DecodeLabs Cyber Security Internship.
+
+Security testing techniques should only be used on systems, applications, and networks that you own or have explicit authorization to assess.
 
 ---
 
